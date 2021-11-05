@@ -1,0 +1,43 @@
+site_name: Ansight Documentation
+copyright: Copyright &copy; 2015-2021 <a href="https://www.ansight.io">MFractor Pty Ltd</a>
+site_author: "Matthew Robbins"
+site_description: "Documentation for Ansight; record, replay and analyse Android testing sessions"
+repo_url: "https://github.com/Ansight/ansight.github.io"
+edit_uri: tree/docs/docs
+remote_branch: "master"
+google_analytics: ['UA-71910290-3', 'docs.ansight.io']
+strict: true
+theme:
+  name: 'material'
+  logo: 'images/logo.png'
+  favicon: 'images/favicon.ico'
+  palette:
+    primary: 'deep orange'
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - codehilite
+  - meta
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.mark
+
+extra_css:
+  - css/tabs.css
+  - css/all.css
+
+extra_javascript:
+  - js/tabs.js
+  - js/set-cookie.js
+  - js/get-cookie.js
+
+nav:
+- Home: index.md
+- General:
+  - Support: support.md
+  - Licensing: licensing.md
+  - FAQ: faq.md
+  - Contributing: contributing.md
+- Legal:
+  - Third Party Software: legal/third-party-software.md

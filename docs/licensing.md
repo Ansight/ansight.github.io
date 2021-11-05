@@ -1,12 +1,12 @@
-!!! quote "Information about MFractor's licensing and terms of use"
+!!! quote "Information about Ansight's licensing and terms of use"
 
 ## Do I need to buy a separate license for Mac for Windows?
 
-An MFractor license works in both MFractor for Windows and Mac.
+An Ansight license works in both Ansight for Windows and Mac.
 
-## MFractor Professional
+## Ansight Professional
 
-MFractor Professional is our paid version of MFractor that can be purchased at [www.mfractor.com/buy](https://www.mfractor.com/buy).
+Ansight Professional is our paid version of Ansight that can be purchased at [www.ansight.com/buy](https://www.ansight.com/buy).
 
 Our terms:
 
@@ -14,16 +14,16 @@ Our terms:
  * Licenses valid for 366 days from the date of purchase.
  * A single license can be used on up to 3 developer machines. As cross-platform developers it is very likely we have a Windows machine, a Mac and a personal machine.
 
-## MFractor Lite
+## Ansight Lite
 
-MFractor Lite is our free-for-use version of MFractor that includes our full XAML feature suite for 4 XAML files per day.
+Ansight Lite is our free-for-use version of Ansight that includes our full XAML feature suite for 4 XAML files per day.
 
-MFractor Lite:
+Ansight Lite:
 
  * Does not allow usage of our C# features.
  * Does not allow usage of our asset management features.
  * Does not allow usage of our code generation wizards.
- * Is not available in MFractor for Visual Studio Windows.
+ * Is not available in Ansight for Visual Studio Windows.
 
 ## End User License
 

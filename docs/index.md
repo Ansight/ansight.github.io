@@ -1,39 +1,39 @@
 ## Welcome
 
-Welcome to the documentation for MFractor, a powerful productivity tool for Xamarin developers.
+Welcome to the documentation for Ansight, a powerful productivity tool for Xamarin developers.
 
-MFractor is available for the Visual Studio Windows and Visual Studio Mac.
+Ansight is available for the Visual Studio Windows and Visual Studio Mac.
 
 ## Feature Matrix
 
-Check out the [MFractor Feature Matrix](/feature-matrix) for a list of all the featuers available to the product and to what editions and platforms it's available.
+Check out the [Ansight Feature Matrix](/feature-matrix) for a list of all the featuers available to the product and to what editions and platforms it's available.
 
 ## Getting Started
 
-To get started using MFractor, please read our getting started guides:
+To get started using Ansight, please read our getting started guides:
 
  * [Quickstart - Visual Studio Windows](/quickstart-windows)
  * [Quickstart - Visual Studio Mac](/quickstart-mac)
 
 ## Licensing
 
-MFractor's licensing levels and end user license can be found in our [Licensing](/licensing) article.
+Ansight's licensing levels and end user license can be found in our [Licensing](/licensing) article.
 
-### MFractor Professional
+### Ansight Professional
 
-MFractor Professional is our paid version of MFractor that can be purchased at [www.mfractor.com/buy](https://www.mfractor.com/buy).
+Ansight Professional is our paid version of Ansight that can be purchased at [www.ansight.com/buy](https://www.ansight.com/buy).
 
-### MFractor Lite
+### Ansight Lite
 
-MFractor Lite is our free-for-use version of MFractor that includes our full XAML feature suite for 4 XAML files per day.
+Ansight Lite is our free-for-use version of Ansight that includes our full XAML feature suite for 4 XAML files per day.
 
 ## Help And Support
 
-To get help using MFractor, please see our [Support](/support) article.
+To get help using Ansight, please see our [Support](/support) article.
 
 ## Release Notes
 
-MFractors release notes can be found at:
+Ansights release notes can be found at:
 
  * [Visual Studio Mac](/release-notes/mac/current)
  * [Visual Studio Windows](/release-notes/windows/current)

@@ -5,3 +5,12 @@
 This document lists the third party software and libraries used by Ansight.
 
 ## Third Party Attribution
+
+**Under Construction**
+
+ * Xamarin.Forms
+ * Xamarin.Essentials
+ * Acr.UserDialogs
+ * SkiaSharp
+ * OpenCVSharp
+ * ScrCpy

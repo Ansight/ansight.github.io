@@ -35,7 +35,7 @@ extra_javascript:
 nav:
 - Home: index.md
 - What is Ansight: what-is-ansight.md
-- Quickstarts: 
+- Quickstarts:
   - Ansight for macOS: quickstarts/macos.md
   - Ansight for Windows: quickstarts/windows.md
 - Installation and Setup: setup.md
@@ -51,6 +51,7 @@ nav:
   - FAQ: faq.md
   - Contributing: contributing.md
 - Releases: https://github.com/Ansight/ansight.releases/releases
+- Known Issues And Limitations: known-issues-limitations.md
 - Roadmap: roadmap.md
 - Legal:
   - Third Party Software: legal/third-party-software.md

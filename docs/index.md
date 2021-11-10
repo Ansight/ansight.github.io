@@ -4,19 +4,13 @@
 
 ## Welcome
 
-Welcome to the documentation for Ansight, a powerful tool for developers that need to collect insights from apps usage to find bugs and fix issues more easily.
+![Ansights logo](/img/logo-small.png)
 
-Use Ansight to record, replay and analyse sessions for your Android device.
+Welcome to the documentation for Ansight, a powerful tool to simplify software testing bug reports by creating high-fidelity, replayable testing sessions.
 
- * 👀  Observe the runtime behaviour of your Android device. View, filter and analyse the device logs alongside it's display.
- * 🎥  Record the screen and logs while using your device.
- * 📼  Replay a device session, viewing its log data sequenced against the devices screen.
+Ansight is still in (very) early preview and is currently available as a standalone app for macOS (Windows support coming in the near future).
 
-Ansight is still in (very) early preview and is envisaged as a tool to simplify communication between software users/testers and the engineering team.
-
-Documentation is currently under construction at: https://docs.ansight.io
-
-Ansight is a standalone app available to macOS and for Windows in the near future.
+Have questions? Reach out to [@matthewrdev](https://twitter.com/matthewrdev) on Twitter.
 
 ## Getting Started
 

@@ -34,11 +34,26 @@ extra_javascript:
 
 nav:
 - Home: index.md
+- What is Ansight: what-is-ansight.md
+- Quickstarts: 
+  - Ansight for macOS: quickstarts/macos.md
+  - Ansight for Windows: quickstarts/windows.md
+- Installation and Setup: setup.md
+- Enabling Developer Mode: enable-dev-mode.md
+- Using Ansight:
+  - Recording Test Sessions: using-ansight/recording-test-sessions.md
+  - Replaying Sessions: using-ansight/replaying-sessions.md
+  - Filtering Logs: using-ansight/filtering-logs.md
+- Logging Best Practices: logging-best-practices.md
 - General:
   - Support: support.md
   - Licensing: licensing.md
   - FAQ: faq.md
   - Contributing: contributing.md
 - Releases: https://github.com/Ansight/ansight.releases/releases
+- Roadmap: roadmap.md
 - Legal:
   - Third Party Software: legal/third-party-software.md
+  - Privacy Policy: legal/privacy-policy.md
+  - End User License: legal/end-user-license.md
+- About US: about-us.md

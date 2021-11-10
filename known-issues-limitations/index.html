@@ -569,6 +569,47 @@
     Known Limitations
   </a>
   
+    <nav class="md-nav" aria-label="Known Limitations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#android-developer-tools" class="md-nav__link">
+    Android Developer Tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple-silicon" class="md-nav__link">
+    Apple Silicon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ansight-for-windows" class="md-nav__link">
+    Ansight For Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mininum-android-version" class="md-nav__link">
+    Mininum Android Version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-streaming-with-locked-device" class="md-nav__link">
+    Video Streaming With Locked Device
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -715,6 +756,47 @@
     Known Limitations
   </a>
   
+    <nav class="md-nav" aria-label="Known Limitations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#android-developer-tools" class="md-nav__link">
+    Android Developer Tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple-silicon" class="md-nav__link">
+    Apple Silicon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ansight-for-windows" class="md-nav__link">
+    Ansight For Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mininum-android-version" class="md-nav__link">
+    Mininum Android Version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-streaming-with-locked-device" class="md-nav__link">
+    Video Streaming With Locked Device
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -740,16 +822,24 @@
 <p class="admonition-title">Known issues and limitations in the current releases of Ansight</p>
 </div>
 <h2 id="known-limitations">Known Limitations</h2>
+<h3 id="android-developer-tools">Android Developer Tools</h3>
+<p>Ansight requires that the <a href="https://developer.android.com/studio/releases/platform-tools">Android Developer Platform Tools</a> are pre-installed. Ansight will automatically detect them when Android Studio or Visual Studio Mac has installed them already.</p>
+<p>Ansight will self-manage the Android Developer Platforms Tools in a future release.</p>
+<h3 id="apple-silicon">Apple Silicon</h3>
+<p>Ansight is currently unsupported on Apple Silicon machines. It uses OpenCV for video streaming and replaying and support is not yet ready in OpenCVSharp for M1 Macs. This is actively being worked on and is targeted for late 2021/early 2022.</p>
+<h3 id="ansight-for-windows">Ansight For Windows</h3>
+<p>Ansight is currently unsupported on Windows. If you would like to see this prioritised, <a href="https://github.com/Ansight/ansight.feedback/discussions/5">please visit the product roadmap</a> and give the item a thumbs up to indicate your interest.</p>
+<h3 id="mininum-android-version">Mininum Android Version</h3>
+<p>Ansight is supported on devices running <a href="https://developer.android.com/studio/releases/platforms#5.0">Android 5 Lollipop (API level 21)</a> and higher. This should include most devices manufactured after December 2014.</p>
+<p>Ansigh depends on screen mirroring software which does not support devices lower than API level 21.</p>
+<h3 id="video-streaming-with-locked-device">Video Streaming With Locked Device</h3>
+<p>When a devices display turns off, the video stream may not reconnected successfully when it is unlocked.</p>
+<p>To work around this:</p>
 <ul>
-<li>Ansight is currently unsupported on Apple Silicon machines. It uses OpenCV for video streaming and replaying and support is not yet ready in OpenCVSharp for M1 Macs. This is actively being worked on and is targeted for late 2021/early 2022.</li>
-<li>Ansight is currently unsupported on Windows. If you would like to see this priories, <a href="https://github.com/Ansight/ansight.feedback/discussions/5">please visit the product roadmap</a> and give the item a thumbs up to indicate your interest.</li>
-<li>When a devices display turns off, the video stream may not reconnected successfully when it is unlocked. To work around this:<ul>
 <li>Increase the automatic lock time of your device.</li>
 <li>Disconnect and reconnect your device while its unlocked.</li>
 </ul>
-</li>
-<li>Ansight is <strong>not supported</strong> on Android devices lower than API level 21.</li>
-</ul>
+<p>This will be fixed in a future Ansight release.</p>
                 
               
               

@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#point-of-difference" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -233,9 +238,66 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          What is Ansight
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         What is Ansight
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#point-of-difference" class="md-nav__link">
+    Point Of Difference
+  </a>
+  
+    <nav class="md-nav" aria-label="Point Of Difference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sdk-free" class="md-nav__link">
+    SDK Free
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-free" class="md-nav__link">
+    App Free
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toolchain-agnostic" class="md-nav__link">
+    Toolchain Agnostic
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -657,6 +719,65 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#point-of-difference" class="md-nav__link">
+    Point Of Difference
+  </a>
+  
+    <nav class="md-nav" aria-label="Point Of Difference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sdk-free" class="md-nav__link">
+    SDK Free
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-free" class="md-nav__link">
+    App Free
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toolchain-agnostic" class="md-nav__link">
+    Toolchain Agnostic
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -672,8 +793,45 @@
                 <div class="admonition quote">
 <p class="admonition-title">Get powerful insights from apps under normal usage</p>
 </div>
-<p>Ansight is an advanced tool to aid you on identifying and solving bugs in Android (and in the future iOS) apps that can be used by testers or remote users to record sessions that can them be replayed on a controlled environment. </p>
+<p>Ansight is an advanced tool to aid you on identifying and solving bugs in Android (and in the future iOS) apps that can be used by testers or remote users to record sessions that can them be replayed on a controlled environment.</p>
+<p>Use Ansight to record, replay and analyse sessions for an Android device.</p>
+<ul>
+<li>👀  Observe the runtime behaviour of your Android device. View, filter and analyse device logs alongside a mirrored screen.</li>
+<li>🎥  Record the screen and logs while using your device.</li>
+<li>📼  Replay a device session, viewing its log data sequenced against the devices screen.</li>
+</ul>
 <p>With Ansight, testers and end-users can record sessions to demonstrate issues or bugs it may be finding on the apps. The recorded file can be handled to a developer to careful inspection. A recording is provided with full footage of the usage of the app and a timeline with detailed information about what happened during the session.</p>
+<h2 id="point-of-difference">Point Of Difference</h2>
+<p>Ansight is different from conventional testing and analytics tools as it:</p>
+<ul>
+<li>Does not require any SDK's to be added to your apps.</li>
+<li>Does not require any app's to be installed onto a users device.</li>
+<li>Is compatiable with all Android development frameworks and tools.</li>
+</ul>
+<h3 id="sdk-free">SDK Free</h3>
+<p>Ansight does not require an SDK's to be added to your app.</p>
+<p>By watching your apps existing logging through <code>logcat</code>, Ansight can record your apps runtime behaviour for replaying and analysis.</p>
+<h3 id="app-free">App Free</h3>
+<p>Ansight does not require any app to be installed onto a users device to be perform data-capturing.</p>
+<p>All data capturing is performed on the machine running Ansight using the Android development toolchain.</p>
+<h3 id="toolchain-agnostic">Toolchain Agnostic</h3>
+<p>Ansight is compatiable with all Android development frameworks and tools.</p>
+<p>By leveraging the Android development toolchain, Ansight can record and monitor any app that is built on any framework.</p>
+<p>Any of the following frameworks can use Ansight to record testing sessions:</p>
+<ul>
+<li>Android using Java.</li>
+<li>Android using Kotlin.</li>
+<li>Flutter.</li>
+<li>React Native.</li>
+<li>Xamarin (both Xamarin.Android and Xamarin.Forms).</li>
+</ul>
+<p>Additionally, Ansight could be used alongside any of the following IDEs record testing sessions:</p>
+<ul>
+<li>Android Studio.</li>
+<li>Visual Studio.</li>
+<li>JetBrains Rider.</li>
+<li>Visual Studioo</li>
+</ul>
                 
               
               

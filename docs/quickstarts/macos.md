@@ -8,16 +8,21 @@ To learn more about installation, licensing or particular feature, please refer 
 
 ## Setup and Maintenance
 
-Please see the [Installation and Setup - macOS](../setup.md) documentation.
+Please see the [Installation and Setup - macOS](../setup/installation-and-setup.md) documentation.
 
 ## Main Window Overview
 
-Ansight Main Window is divided in a few parts.
+Welcome to Ansight! Here's how our main window looks like.
 
-!!! danger "Under construction"
+![](/img/quickstarts/main-window.png)
+
+The Ansight Window is divided in a few parts. At the top you can check or select devices for recording. When a device is selected it will automatically start to track its logcat output on the main grid 
+
+There two general workloads that you can achieve on Ansight:
+
 
 ## Feature Overview
-
+s
 !!! danger "Under construction"
 
 ## Preferences

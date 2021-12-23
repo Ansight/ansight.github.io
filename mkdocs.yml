@@ -38,8 +38,10 @@ nav:
 - Quickstarts:
   - Ansight for macOS: quickstarts/macos.md
   - Ansight for Windows: quickstarts/windows.md
-- Installation and Setup: setup.md
-- Enabling Developer Mode: enable-dev-mode.md
+- Installation and Setup: 
+  - Installation Guide: setup/installation-and-setup.md
+  - macOS with Apple Sillicon: setup/macos-apple-silicon.md
+- Enabling Developer Mode: enable-developer-mode.md
 - Using Ansight:
   - Recording Test Sessions: using-ansight/recording-test-sessions.md
   - Replaying Sessions: using-ansight/replaying-sessions.md

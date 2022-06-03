@@ -37,6 +37,7 @@ nav:
 - What is Ansight: what-is-ansight.md
 - Quickstart: quickstart.md
 - Installation and Setup: setup.md
+- macOS with Apple Sillicon: setup/macos-apple-silicon.md
 - Enabling Developer Mode: https://developer.android.com/studio/debug/dev-options
 - Using Ansight:
   - Recording Test Sessions: using-ansight/recording-test-sessions.md

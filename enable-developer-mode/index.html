@@ -18,7 +18,7 @@
     
     
       
-        <title>Logging Best Practices - Ansight Documentation</title>
+        <title>Enable developer mode - Ansight Documentation</title>
       
     
     
@@ -72,11 +72,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#using-android-tags" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -104,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Logging Best Practices
+              Enable developer mode
             
           </span>
         </div>
@@ -380,56 +375,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Logging Best Practices
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../logging-best-practices/" class="md-nav__link">
         Logging Best Practices
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-android-tags" class="md-nav__link">
-    Using Android Tags
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#privacy-considerations" class="md-nav__link">
-    Privacy Considerations
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -653,59 +603,55 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-android-tags" class="md-nav__link">
-    Using Android Tags
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#privacy-considerations" class="md-nav__link">
-    Privacy Considerations
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Ansight/ansight.github.io/tree/docs/docs/logging-best-practices.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/Ansight/ansight.github.io/tree/docs/docs/enable-developer-mode.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Logging Best Practices</h1>
+                  <h1>Enable developer mode</h1>
                 
-                <h2 id="using-android-tags">Using Android Tags</h2>
-<h2 id="privacy-considerations">Privacy Considerations</h2>
+                <div class="admonition quote">
+<p class="admonition-title">Enable Developer Mode on your Android device to allow Ansight features.</p>
+</div>
+<p>For Ansight to be able to capture an Android device logs from <code>logcat</code> and record the screen, it is required to enable developer mode on your target device.</p>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p>The device used to illustrate this procedure is an <em>Samsung Galaxy J5 Pro</em>, which employs custom interface and Settings screen, but the general procedure is mostly the same for any Android device. If you're having issues finding the screens about check for a vendor specific procedure on your brands support site.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When you enable Developer Mode on your Android device, several advanced features of the operating system are enabled, such as side-loading of apps. This may allow your device for installation of unwanted apps, so its important to be warned if you're using a personal device. The recommendation is always to use a device specific for testing or disable developer mode when Ansight (or other development features) is not in use.</p>
+</div>
+<p>The procedure to enable Developer Mode is:</p>
+<ul>
+<li>Open the <strong>Settings</strong> app on your device and lookup for the <strong>About your Phone</strong> option.</li>
+</ul>
+<p><img alt="" src="../img/enable-developer-mode/settings-main.jpg" style="width: 300px;" /></p>
+<ul>
+<li>Depending on your iPhone, what we're looking for may be on the <strong>Software Information</strong> page, or this section may be merged into this about page. Select the option if it have one.</li>
+</ul>
+<p><img alt="" src="../img/enable-developer-mode/settings-about.jpg" style="width: 300px;" /></p>
+<p><img alt="" src="../img/enable-developer-mode/settings-software-info.jpg" style="width: 300px" /></p>
+<ul>
+<li>Look up for the <code>About</code> option</li>
+<li>Under the About Screen search for the <code>Build Number</code></li>
+<li>Tap 7 times on the Build Number option, you should receive a message such as <code>You are now a developer</code></li>
+</ul>
+<p>After following those steps the Developer Options menu item should appear on the Settings page. An additional step is to enable the <strong>USB Debugging</strong> option. This is what allows you computer to connect to a device and collect information that will feed Ansight session data. To allow this option you should:</p>
+<ul>
+<li>Open the <code>Developer Options</code> option on the <code>Settings</code> screen</li>
+<li>Look up for the <code>Debugging</code> section</li>
+<li>Find the <code>USB debugging</code> option and enable the Switch</li>
+</ul>
+<p><img alt="" src="../img/enable-developer-mode/devmode-allow-usb.jpg" /></p>
+<p>After enabling the USB debugging you should connect the device that you want to record sessions on Ansight. A dialog should be presented asking you to Allow USB debugging.</p>
+<p><img alt="" src="../img/enable-developer-mode/allow-usb-debug.jpg" /></p>
+<p>You're all set to start using Ansight.</p>
                 
               
               
@@ -721,41 +667,6 @@
       
         
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../using-ansight/filtering-logs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Filtering Logs" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Filtering Logs
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../support/" class="md-footer__link md-footer__link--next" aria-label="Next: Support" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Support
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

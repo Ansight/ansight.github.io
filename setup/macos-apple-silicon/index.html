@@ -13,19 +13,19 @@
         <meta name="author" content="Matthew Robbins">
       
       
-      <link rel="icon" href="../images/favicon.ico">
+      <link rel="icon" href="../../images/favicon.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
-        <title>Logging Best Practices - Ansight Documentation</title>
+        <title>macOS with Apple Sillicon - Ansight Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
         
           
           
@@ -44,9 +44,9 @@
     
     
     
-      <link rel="stylesheet" href="../css/tabs.css">
+      <link rel="stylesheet" href="../../css/tabs.css">
     
-      <link rel="stylesheet" href="../css/all.css">
+      <link rel="stylesheet" href="../../css/all.css">
     
     
       
@@ -65,7 +65,7 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-orange" data-md-color-accent="">
   
     
-    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#using-android-tags" class="md-skip">
+        <a href="#tldr" class="md-skip">
           Skip to content
         </a>
       
@@ -86,9 +86,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Ansight Documentation" class="md-header__button md-logo" aria-label="Ansight Documentation" data-md-component="logo">
+    <a href="../.." title="Ansight Documentation" class="md-header__button md-logo" aria-label="Ansight Documentation" data-md-component="logo">
       
-  <img src="../images/logo.png" alt="logo">
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Logging Best Practices
+              macOS with Apple Sillicon
             
           </span>
         </div>
@@ -185,9 +185,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Ansight Documentation" class="md-nav__button md-logo" aria-label="Ansight Documentation" data-md-component="logo">
+    <a href="../.." title="Ansight Documentation" class="md-nav__button md-logo" aria-label="Ansight Documentation" data-md-component="logo">
       
-  <img src="../images/logo.png" alt="logo">
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     Ansight Documentation
@@ -216,7 +216,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -231,7 +231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what-is-ansight/" class="md-nav__link">
+      <a href="../../what-is-ansight/" class="md-nav__link">
         What is Ansight
       </a>
     </li>
@@ -246,7 +246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quickstart/" class="md-nav__link">
+      <a href="../../quickstart/" class="md-nav__link">
         Quickstart
       </a>
     </li>
@@ -261,7 +261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         Installation and Setup
       </a>
     </li>
@@ -274,11 +274,69 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../setup/macos-apple-silicon/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          macOS with Apple Sillicon
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         macOS with Apple Sillicon
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    TL;DR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailed-explanation" class="md-nav__link">
+    Detailed Explanation
+  </a>
+  
+    <nav class="md-nav" aria-label="Detailed Explanation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#can-i-install-opencv-directly" class="md-nav__link">
+    Can I install OpenCV directly?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -332,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../using-ansight/recording-test-sessions/" class="md-nav__link">
+      <a href="../../using-ansight/recording-test-sessions/" class="md-nav__link">
         Recording Test Sessions
       </a>
     </li>
@@ -346,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../using-ansight/replaying-sessions/" class="md-nav__link">
+      <a href="../../using-ansight/replaying-sessions/" class="md-nav__link">
         Replaying Sessions
       </a>
     </li>
@@ -360,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../using-ansight/filtering-logs/" class="md-nav__link">
+      <a href="../../using-ansight/filtering-logs/" class="md-nav__link">
         Filtering Logs
       </a>
     </li>
@@ -380,56 +438,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Logging Best Practices
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../logging-best-practices/" class="md-nav__link">
         Logging Best Practices
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-android-tags" class="md-nav__link">
-    Using Android Tags
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#privacy-considerations" class="md-nav__link">
-    Privacy Considerations
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -468,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../support/" class="md-nav__link">
+      <a href="../../support/" class="md-nav__link">
         Support
       </a>
     </li>
@@ -482,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../licensing/" class="md-nav__link">
+      <a href="../../licensing/" class="md-nav__link">
         Licensing
       </a>
     </li>
@@ -496,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         FAQ
       </a>
     </li>
@@ -533,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../known-issues-limitations/" class="md-nav__link">
+      <a href="../../known-issues-limitations/" class="md-nav__link">
         Known Issues And Limitations
       </a>
     </li>
@@ -589,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../legal/third-party-software/" class="md-nav__link">
+      <a href="../../legal/third-party-software/" class="md-nav__link">
         Third Party Software
       </a>
     </li>
@@ -603,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../legal/privacy-policy/" class="md-nav__link">
+      <a href="../../legal/privacy-policy/" class="md-nav__link">
         Privacy Policy
       </a>
     </li>
@@ -617,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../legal/end-user-license/" class="md-nav__link">
+      <a href="../../legal/end-user-license/" class="md-nav__link">
         End User License
       </a>
     </li>
@@ -639,7 +652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about-us/" class="md-nav__link">
+      <a href="../../about-us/" class="md-nav__link">
         About US
       </a>
     </li>
@@ -672,16 +685,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-android-tags" class="md-nav__link">
-    Using Android Tags
+  <a href="#tldr" class="md-nav__link">
+    TL;DR
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#privacy-considerations" class="md-nav__link">
-    Privacy Considerations
+  <a href="#detailed-explanation" class="md-nav__link">
+    Detailed Explanation
   </a>
+  
+    <nav class="md-nav" aria-label="Detailed Explanation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#can-i-install-opencv-directly" class="md-nav__link">
+    Can I install OpenCV directly?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -697,15 +723,28 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Ansight/ansight.github.io/tree/docs/docs/logging-best-practices.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/Ansight/ansight.github.io/tree/docs/docs/setup/macos-apple-silicon.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Logging Best Practices</h1>
+                  <h1>macOS with Apple Sillicon</h1>
                 
-                <h2 id="using-android-tags">Using Android Tags</h2>
-<h2 id="privacy-considerations">Privacy Considerations</h2>
+                <div class="admonition quote">
+<p class="admonition-title">Installing Ansight on Macs with Apple Silicon chips.</p>
+</div>
+<p>If you're using a Mac with an Apple Silicon chip, you'll need specific instructions for installing the third-party dependencies required by Ansight. </p>
+<h2 id="tldr">TL;DR</h2>
+<p>Briefly, you should install the <code>opencv</code> dependency using the following commands:</p>
+<div class="highlight"><pre><span></span><code>arch -x86_64 /bin/bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh<span class="k">)</span><span class="s2">&quot;</span>
+arch -x86_64 /usr/local/Homebrew/bin/brew install opencv
+</code></pre></div>
+<h2 id="detailed-explanation">Detailed Explanation</h2>
+<p>Apple Silicon Macs switched from the <code>x86/64</code> architecture of Intel chips to the <code>ARM64</code> architecture. For backward compatibility binaries compiled for the former architecture are still supported under Rosetta 2 emulation layer, which most of the time is handled gracefully by macOS and should be transparent to end user.</p>
+<p>The recommended way of installing the required third-party componentes is through <a href="https://brew.sh">Homebrew</a>. On its default setup it installs the <code>ARM64</code> version of the tool, that resides in a different path than the former one. This is done this way to allow you to have side-by-side installations of the binaries for the different supported architectures.</p>
+<p>As of the <code>opencv</code> component, when installed with the <code>ARM64</code> architecture it resides on different folder than the one that Ansight expects to find it. We're still checking how to fix issue to be able to use the default installed path, but for now we kindly ask you to follow the steps on the initial section of this page.</p>
+<h3 id="can-i-install-opencv-directly">Can I install OpenCV directly?</h3>
+<p>Although you can manually install OpenCV the library itself has several dependencies whose installation is handled gracefully by using <a href="https://brew.sh">Homebrew</a>, which keeps being the recommended way of installing it.</p>
                 
               
               
@@ -725,7 +764,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../using-ansight/filtering-logs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Filtering Logs" rel="prev">
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation and Setup" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -734,20 +773,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Filtering Logs
+              Installation and Setup
             </div>
           </div>
         </a>
       
       
         
-        <a href="../support/" class="md-footer__link md-footer__link--next" aria-label="Next: Support" rel="next">
+        <a href="../../using-ansight/recording-test-sessions/" class="md-footer__link md-footer__link--next" aria-label="Next: Recording Test Sessions" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Support
+              Recording Test Sessions
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -782,16 +821,16 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
       
-        <script src="../js/tabs.js"></script>
+        <script src="../../js/tabs.js"></script>
       
-        <script src="../js/set-cookie.js"></script>
+        <script src="../../js/set-cookie.js"></script>
       
-        <script src="../js/get-cookie.js"></script>
+        <script src="../../js/get-cookie.js"></script>
       
     
   </body>

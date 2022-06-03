@@ -20,14 +20,3 @@ Ansight is currently unsupported on Windows. If you would like to see this prior
 Ansight is supported on devices running [Android 5 Lollipop (API level 21)](https://developer.android.com/studio/releases/platforms#5.0) and higher. This should include most devices manufactured after December 2014.
 
 Ansigh depends on screen mirroring software which does not support devices lower than API level 21.
-
-### Video Streaming With Locked Device
-
-When a devices display turns off, the video stream may not reconnected successfully when it is unlocked.
-
-To work around this:
-
-  * Increase the automatic lock time of your device.
-  * Disconnect and reconnect your device while its unlocked.
-
-This will be fixed in a future Ansight release.

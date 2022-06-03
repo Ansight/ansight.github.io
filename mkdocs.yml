@@ -35,11 +35,9 @@ extra_javascript:
 nav:
 - Home: index.md
 - What is Ansight: what-is-ansight.md
-- Quickstarts:
-  - Ansight for macOS: quickstarts/macos.md
-  - Ansight for Windows: quickstarts/windows.md
+- Quickstart: quickstart.md
 - Installation and Setup: setup.md
-- Enabling Developer Mode: enable-dev-mode.md
+- Enabling Developer Mode: https://developer.android.com/studio/debug/dev-options
 - Using Ansight:
   - Recording Test Sessions: using-ansight/recording-test-sessions.md
   - Replaying Sessions: using-ansight/replaying-sessions.md
@@ -49,7 +47,6 @@ nav:
   - Support: support.md
   - Licensing: licensing.md
   - FAQ: faq.md
-  - Contributing: contributing.md
 - Releases: https://github.com/Ansight/ansight.releases/releases
 - Known Issues And Limitations: known-issues-limitations.md
 - Roadmap: https://github.com/Ansight/ansight.feedback/discussions/categories/roadmap

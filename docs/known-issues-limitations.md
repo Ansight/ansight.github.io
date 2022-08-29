@@ -15,7 +15,7 @@ Ansight is currently unsupported on Apple Silicon machines. It uses OpenCV for v
 
 Ansight is currently unsupported on Windows. If you would like to see this prioritised, [please visit the product roadmap](https://github.com/Ansight/ansight.feedback/discussions/5) and give the item a thumbs up to indicate your interest.
 
-### Mininum Android Version
+### Minimum Android Version
 
 Ansight is supported on devices running [Android 5 Lollipop (API level 21)](https://developer.android.com/studio/releases/platforms#5.0) and higher. This should include most devices manufactured after December 2014.
 

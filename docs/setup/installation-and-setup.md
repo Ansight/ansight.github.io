@@ -2,18 +2,42 @@
 
 ## Introduction
 
-This document outlines how to install, acrivate and upgrade Ansight for macOS and Windows.
+This document outlines how to install, activate and upgrade Ansight for macOS and Windows.
 
 ## Ansight for macOS
 
-### Installation
+### Install Ansight
 
 Ansight is available to macOS as an installation package. Download the latest version from the [Releases](https://github.com/Ansight/ansight.releases/releases) page.
 
+### Setup Video Streaming Dependencies
+
+Ansight uses ffmpeg to stream a devices display
+
 You will also need to install third-party dependencies used by Ansight to provide some of its features:
 
-* **Opencv**: used for video capturing features of Ansigh Studio.
 * **ffmpeg**: a direct dependency of OpenCV for the specific features we employ.
+
+At a glance
+
+ 1. Verify machine architecture (Apple Silicon or Intel)
+ 2. Install HomeBrew
+ 3. Install ffmpeg@4
+ 3. Verify OpenCV Dependencies.
+
+#### Verify Machine Architecture
+
+```
+uname -n
+```
+
+#### Install HomeBrew
+
+#### Install ffmpeg@4
+
+### Verify OpenCV Dependencies
+
+
 
 !!! tip "Apple Silicon Users"
     There are specific instructions for installing those dependencies for Macs with Apple Silicon chips. [Please check the docs](macos-apple-silicon.md).
@@ -21,7 +45,6 @@ You will also need to install third-party dependencies used by Ansight to provid
 The preferred and easiest way of installing those dependencies is using [Homebrew](https://brew.sh), a popular package manager for macOS. Both libraries are available as formulaes on the platform and the installation should be as using the following command on your Terminal:
 
 ```bash
-brew install opencv
 brew install ffmpeg
 ```
 
@@ -38,22 +61,8 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>  ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-### Activation
+### Updating Ansight
 
-!!! danger "Under construction"
+### Uninstall Ansight
 
-### Upgrades
-
-!!! danger "Under construction"
-
-### Uninstallation
-
-!!! danger "Under construction"
-
-### Release Notes
-
-!!! dnager "Under construction"
-
-## Ansight for Windows
-
-Ansight for Windows is under active development and is currently not available. Please subscribe our newsletter to receive news of the Windows version availability.
+ * Delete the application

@@ -9,12 +9,15 @@
         <meta name="description" content="Documentation for Ansight; record, replay and analyse Android testing sessions">
       
       
-      
         <meta name="author" content="Matthew Robbins">
       
       
+      
+      
+        <link rel="next" href="enable-developer-mode/">
+      
       <link rel="icon" href="images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
@@ -22,36 +25,34 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.a57b2b03.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#ff6e42">
-        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ecc896b0.min.css">
       
+      
+
     
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
-    
     
     
       <link rel="stylesheet" href="css/tabs.css">
     
       <link rel="stylesheet" href="css/all.css">
     
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
-
+    
     
     
   </head>
@@ -62,10 +63,9 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-orange" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo">
   
     
-    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome" class="md-skip">
+        <a href="#installing-ansight" class="md-skip">
           Skip to content
         </a>
       
@@ -82,9 +82,12 @@
       
     </div>
     
+    
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="Ansight Documentation" class="md-header__button md-logo" aria-label="Ansight Documentation" data-md-component="logo">
       
@@ -92,7 +95,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -111,25 +114,26 @@
       </div>
     </div>
     
+      
+    
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -140,7 +144,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -149,11 +153,10 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/Ansight/ansight.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/Ansight/ansight.github.io" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -194,11 +197,10 @@
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/Ansight/ansight.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/Ansight/ansight.github.io" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -219,7 +221,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
@@ -234,7 +236,6 @@
       
         
 
-
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -247,23 +248,111 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#welcome" class="md-nav__link">
-    Welcome
+  <a href="#installing-ansight" class="md-nav__link">
+    Installing Ansight
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    Getting Started
+  <a href="#using-ansight" class="md-nav__link">
+    Using Ansight
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Ansight">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#watching-a-device" class="md-nav__link">
+    Watching A Device
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#licensing" class="md-nav__link">
-    Licensing
+        
+          <li class="md-nav__item">
+  <a href="#inspecting-device-logs" class="md-nav__link">
+    Inspecting Device Logs
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inspecting-device-properties" class="md-nav__link">
+    Inspecting Device Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#targeting-an-app" class="md-nav__link">
+    Targeting An App
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recording-sessions" class="md-nav__link">
+    Recording Sessions
+  </a>
+  
+    <nav class="md-nav" aria-label="Recording Sessions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saving-your-recording" class="md-nav__link">
+    Saving Your Recording
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-does-ansight-record" class="md-nav__link">
+    What does Ansight record?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replaying-sessions" class="md-nav__link">
+    Replaying Sessions
+  </a>
+  
+    <nav class="md-nav" aria-label="Replaying Sessions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reloading-previous-recordings" class="md-nav__link">
+    Reloading Previous Recordings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importing-an-ansight-recording" class="md-nav__link">
+    Importing An Ansight Recording
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-session-properties" class="md-nav__link">
+    Viewing Session Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -275,8 +364,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#release-notes" class="md-nav__link">
-    Release Notes
+  <a href="#feedback" class="md-nav__link">
+    Feedback
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#releases-and-updates" class="md-nav__link">
+    Releases And Updates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-ansight-help-software-testing" class="md-nav__link">
+    How Does Ansight Help Software Testing?
   </a>
   
 </li>
@@ -285,66 +388,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="what-is-ansight/" class="md-nav__link">
-        What is Ansight
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="quickstart/" class="md-nav__link">
-        Quickstart
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="setup/" class="md-nav__link">
-        Installation and Setup
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="setup/macos-apple-silicon/" class="md-nav__link">
-        macOS with Apple Sillicon
-      </a>
     </li>
   
 
@@ -371,162 +414,10 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7">
-          Using Ansight
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Using Ansight" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          Using Ansight
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
     <li class="md-nav__item">
-      <a href="using-ansight/recording-test-sessions/" class="md-nav__link">
-        Recording Test Sessions
+      <a href="ansights-origins/" class="md-nav__link">
+        Ansights Origins
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="using-ansight/replaying-sessions/" class="md-nav__link">
-        Replaying Sessions
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="using-ansight/filtering-logs/" class="md-nav__link">
-        Filtering Logs
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="logging-best-practices/" class="md-nav__link">
-        Logging Best Practices
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_9">
-          General
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="General" data-md-level="1">
-        <label class="md-nav__title" for="__nav_9">
-          <span class="md-nav__icon md-icon"></span>
-          General
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="support/" class="md-nav__link">
-        Support
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="licensing/" class="md-nav__link">
-        Licensing
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="faq/" class="md-nav__link">
-        FAQ
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -553,52 +444,23 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="known-issues-limitations/" class="md-nav__link">
-        Known Issues And Limitations
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://github.com/Ansight/ansight.feedback/discussions/categories/roadmap" class="md-nav__link">
-        Roadmap
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_13">
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
           Legal
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Legal" data-md-level="1">
-        <label class="md-nav__title" for="__nav_13">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Legal
         </label>
@@ -610,22 +472,8 @@
   
   
     <li class="md-nav__item">
-      <a href="legal/third-party-software/" class="md-nav__link">
-        Third Party Software
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="legal/privacy-policy/" class="md-nav__link">
-        Privacy Policy
+      <a href="legal/data-collection-and-user-tracking/" class="md-nav__link">
+        Data Collection And User Tracking
       </a>
     </li>
   
@@ -646,23 +494,22 @@
 
             
           
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
+            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="about-us/" class="md-nav__link">
-        About US
+      <a href="legal/third-party-software/" class="md-nav__link">
+        Third Party Software
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -680,7 +527,6 @@
                   <div class="md-sidebar__inner">
                     
 
-
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -693,23 +539,111 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#welcome" class="md-nav__link">
-    Welcome
+  <a href="#installing-ansight" class="md-nav__link">
+    Installing Ansight
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    Getting Started
+  <a href="#using-ansight" class="md-nav__link">
+    Using Ansight
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Ansight">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#watching-a-device" class="md-nav__link">
+    Watching A Device
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#licensing" class="md-nav__link">
-    Licensing
+        
+          <li class="md-nav__item">
+  <a href="#inspecting-device-logs" class="md-nav__link">
+    Inspecting Device Logs
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inspecting-device-properties" class="md-nav__link">
+    Inspecting Device Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#targeting-an-app" class="md-nav__link">
+    Targeting An App
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recording-sessions" class="md-nav__link">
+    Recording Sessions
+  </a>
+  
+    <nav class="md-nav" aria-label="Recording Sessions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saving-your-recording" class="md-nav__link">
+    Saving Your Recording
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-does-ansight-record" class="md-nav__link">
+    What does Ansight record?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replaying-sessions" class="md-nav__link">
+    Replaying Sessions
+  </a>
+  
+    <nav class="md-nav" aria-label="Replaying Sessions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reloading-previous-recordings" class="md-nav__link">
+    Reloading Previous Recordings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importing-an-ansight-recording" class="md-nav__link">
+    Importing An Ansight Recording
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-session-properties" class="md-nav__link">
+    Viewing Session Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -721,8 +655,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#release-notes" class="md-nav__link">
-    Release Notes
+  <a href="#feedback" class="md-nav__link">
+    Feedback
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#releases-and-updates" class="md-nav__link">
+    Releases And Updates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-ansight-help-software-testing" class="md-nav__link">
+    How Does Ansight Help Software Testing?
   </a>
   
 </li>
@@ -735,92 +683,156 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-                  <a href="https://github.com/Ansight/ansight.github.io/tree/docs/docs/index.md" title="Edit this page" class="md-content__button md-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-                  </a>
-                
-                
-                  <h1>Home</h1>
-                
-                <div class="admonition warning">
-<p class="admonition-title">Documentation is under construction.</p>
-</div>
-<div class="admonition danger">
-<p class="admonition-title">Ansight is currently in closed Beta.</p>
-</div>
-<h2 id="welcome">Welcome</h2>
-<p><img alt="Ansights logo" src="/img/logo-small.png" /></p>
-<p>Welcome to the documentation for Ansight, a powerful tool to simplify software testing bug reports by creating high-fidelity, replayable testing sessions.</p>
-<p>Ansight is still in (very) early preview and is currently available as a standalone app for macOS (Windows support coming in the near future).</p>
-<p>Have questions? Reach out to <a href="https://twitter.com/matthewrdev">@matthewrdev</a> on Twitter.</p>
-<h2 id="getting-started">Getting Started</h2>
-<p>To get started using Ansight please read our getting started guides:</p>
+                  
+
+  
+  
+
+
+  <h1>Home</h1>
+
+<p>Use Ansight to easily record an Android device's behaviour for replay and analysis.</p>
+<p>Connect a developer-enabled Android device to your computer and Ansight streams the device logs, a screen mirroring and application performance data.</p>
+<p><img alt="An example of Ansight monitoring a Google Pixel, including the phones device logs, a screen mirroring and the memory usage of the Google Translate app" src="/img/ansight-example.png" /></p>
+<p>Ansight works with all of your existing Android apps:</p>
 <ul>
-<li><a href="quickstarts/macos/">Quickstart - Ansight for macOS</a></li>
-<li><a href="quickstarts/windows/">Quickstart - Ansight for Windows</a></li>
+<li><strong>Zero Configuration:</strong> You do not need to add any SDK's to your codebase for Ansight to capture data.</li>
+<li><strong>App Free:</strong> No 3rd party apps need to be installed onto the phone or tablet.</li>
+<li><strong>Target Any App:</strong> Ansight can target any kind of app: an app being debugged, an app from the Play Store, or even an app bundled with the phone. If the app is on the device, Ansight can monitor it.</li>
+<li><strong>Toolchain Agnostic:</strong> Ansight works with all Android development frameworks. It uses the standard ADB toolchain so it doesn't matter if you use Java, Kotlin, React Native, Flutter, Xamarin, Unity, Unreal Engine etc.</li>
+<li><strong>Standalone:</strong> Ansight is fully self contained and does not require any developer tools like Android Studio to be installed.</li>
 </ul>
-<h2 id="licensing">Licensing</h2>
-<p>Ansight's licensing levels and end user licence can be found in our <a href="licensing/">Licensing</a> article.</p>
+<h2 id="installing-ansight">Installing Ansight</h2>
+<div class="admonition tip">
+<p class="admonition-title">macOS Only</p>
+<p>Ansight is currently only available for macOS. If you would like Ansight to become available on Windows, please reach out to Matthew via <code>matthew@mfractor.com</code> to discuss.</p>
+</div>
+<ol>
+<li><a href="https://github.com/Ansight/ansight.releases/releases">Download the latest Ansight.Studio.Mac package.</a></li>
+<li>Locate the package in your downloads.</li>
+<li>Right click on the package and select <code>Open</code>.
+  a. You may receive a warning that Ansight is from an unknown developer. Please continue to run the installer.</li>
+<li>Run the installer.</li>
+<li>Open your Applications folder and double click on <code>Ansight.Studio.Mac</code> to launch Ansight.</li>
+</ol>
+<h2 id="using-ansight">Using Ansight</h2>
+<h3 id="watching-a-device">Watching A Device</h3>
+<p>To use Ansight, plug an Android device into your computer that has <a href="enable-developer-mode/">developer mode enabled.</a></p>
+<p>Once a device is connected, Ansight will automatically start watching the device.</p>
+<p>This includes:</p>
+<ol>
+<li>A mirroring of the devices screen.</li>
+<li>The devices logs.</li>
+<li>Optionally, the amount of memory a targeted app is using.</li>
+</ol>
+<p>If you have multiple devices connected, Ansight will choose the first device it sees. You can change device by clicking on the devices name in the top left of the window and then choosing</p>
+<h3 id="inspecting-device-logs">Inspecting Device Logs</h3>
+<p>After you have connected a device, you can use the log viewer to observe the runtime logs of the device. Ansight uses <a href="https://developer.android.com/studio/command-line/logcat"><code>adb logcat</code></a> to stream the logs from the device.</p>
+<p>The log viewer shows the following details:</p>
+<ul>
+<li><strong>Level:</strong> The level of the logged item (Verbose, Debug, Info, Warning, Error, Fatal). See <a href="https://developer.android.com/reference/android/util/Log">android.util.Log</a>.</li>
+<li><strong>Time:</strong> The date and time that the log message was written. For replayed recordings, this shows the time elapsed since the beginning of the recording</li>
+<li><strong>Process:</strong> The ID of the process that wrote this log message.</li>
+<li><strong>Tag:</strong> The tag associated with the log message.</li>
+<li><strong>Message:</strong> The message content of the log entry.</li>
+<li><strong>Thread:</strong> The ID of the thread that wrote this log message.</li>
+</ul>
+<p>The log viewer also contains several methods of filtering the content:</p>
+<ul>
+<li><strong>Log Level:</strong> Select the minimum log level to display in the logs.</li>
+<li><strong>Process ID:</strong> A comma or space separated list of process ids to watch.</li>
+<li><strong>Tag:</strong> A comma or space separated list of tags for each log message to watch.</li>
+<li><strong>Content:</strong> A partial string to match inside the logs message.</li>
+</ul>
+<h3 id="inspecting-device-properties">Inspecting Device Properties</h3>
+<h3 id="targeting-an-app">Targeting An App</h3>
+<p>Ansight can target a specific application to monitor and will display the memory usage of that app while it is running.</p>
+<p>To target an app, click on the area <code>No Package Targeted</code> below the targeted device.</p>
+<p>This opens the app explorer, you can search by package ID and view details for each installed app on the device.</p>
+<p>Once you have chosen an application, Ansight will show you the package identifier targeted in the top left</p>
+<h3 id="recording-sessions">Recording Sessions</h3>
+<p>Ansight can record a device session for</p>
+<h4 id="saving-your-recording">Saving Your Recording</h4>
+<h4 id="what-does-ansight-record">What does Ansight record?</h4>
+<p>Ansight records "high-fidelity" data for the testing session. This includes:</p>
+<ul>
+<li>The devices properties via the <a href="https://adbshell.com/commands/adb-shell-getprop"><code>adb shell getprop</code></a> command. This includes API level, model, manufacturer, etc.</li>
+<li>A screen recording.</li>
+<li>The device logs.</li>
+<li>If an app is targeted, the bundle identifier and the process IDs of that app.</li>
+</ul>
+<h3 id="replaying-sessions">Replaying Sessions</h3>
+<h4 id="reloading-previous-recordings">Reloading Previous Recordings</h4>
+<h4 id="importing-an-ansight-recording">Importing An Ansight Recording</h4>
+<p>Ansight can import and replay any <code>.ans</code></p>
+<p>To load an Ansight recording from file:</p>
+<h4 id="viewing-session-properties">Viewing Session Properties</h4>
 <h2 id="help-and-support">Help and Support</h2>
-<p>To get help using Ansight, please see our <a href="support/">Support</a> article.</p>
-<h2 id="release-notes">Release Notes</h2>
-<p>Follow the Release Notes along the link to download the binaries on our <a href="https://github.com/Ansight/ansight.releases/releases">Releases page at GitHub</a>.</p>
-                
-              
-              
-                
+<p>For assistance using Ansight, you can reach out to me, Matthew Robbins, Ansights author, through the following channels:</p>
+<ul>
+<li>Twitter: <a href="https://twitter.com/matthewrdev">@matthewrdev</a></li>
+<li>Email: matthew@mfractor.com</li>
+</ul>
+<h2 id="feedback">Feedback</h2>
+<p>If you'd like to see a feature added to Ansight or have found a bug, please create an issue in Ansight issue tracker:</p>
+<p><a href="https://github.com/Ansight/ansight.feedback/issues">https://github.com/Ansight/ansight.feedback/issues</a></p>
+<h2 id="releases-and-updates">Releases And Updates</h2>
+<p>New releases can be downloaded at the <a href="https://github.com/Ansight/ansight.releases/releases">Ansight GitHub Releases page</a>.</p>
+<h2 id="how-does-ansight-help-software-testing">How Does Ansight Help Software Testing?</h2>
+<p>Let's consider the following scenario:</p>
+<ol>
+<li>Joe is testing the App and finds a bug.</li>
+<li>Joe creates a bug report for Jane, the developer.</li>
+<li>Jane reads the bug report and, more often than not, needs more information:<ul>
+<li>A screen recording might help demonstrate what went wrong.</li>
+<li>A snapshot of the device logs could shed light on the apps behaviour during the bug.</li>
+<li>Joe may have missed including the device model or Android version or App version or web server used.</li>
+</ul>
+</li>
+<li>Jane asks Joe to capture this missing information to help her solve the issue.</li>
+<li>Repeats steps 3 and 4.</li>
+</ol>
+<p>I wanted a tool Joe could use to seamlessly capture <strong>all</strong> the information that Jane needs to diagnose a bug.</p>
+<ul>
+<li>Joe's life is easier as he can focus on testing and let a tool capture the required data.</li>
+<li>Jane can focus on collaborating with Joe to understand the bug, rather than probing Joe for more information.</li>
+</ul>
+<p>To learn more about why Ansight was built and the problem it solves, read about <a href="ansights-origins/">Ansights origins here.</a></p>
 
 
-              
-            </article>
-          </div>
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
-        
-<footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-      
-        
-        <a href="what-is-ansight/" class="md-footer__link md-footer__link--next" aria-label="Next: What is Ansight" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              What is Ansight
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
+        <footer class="md-footer">
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2015-2021 <a href="https://www.ansight.io">Matthew Robbins</a>
-          </div>
-        
-        
-          Made with
-          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-            Material for MkDocs
-          </a>
-        
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2015-2021 <a href="https://www.ansight.io">Matthew Robbins</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
@@ -830,10 +842,11 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.b1047164.min.js"></script>
+      <script src="assets/javascripts/bundle.b4d07000.min.js"></script>
       
         <script src="js/tabs.js"></script>
       

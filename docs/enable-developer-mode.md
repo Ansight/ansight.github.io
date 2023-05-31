@@ -32,8 +32,6 @@ After following those steps the Developer Options menu item should appear on the
 
 ![](img/enable-developer-mode/devmode-allow-usb.jpg)
 
-
-
 After enabling the USB debugging you should connect the device that you want to record sessions on Ansight. A dialog should be presented asking you to Allow USB debugging.
 
 ![](img/enable-developer-mode/allow-usb-debug.jpg)

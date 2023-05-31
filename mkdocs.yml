@@ -34,25 +34,10 @@ extra_javascript:
 
 nav:
 - Home: index.md
-- What is Ansight: what-is-ansight.md
-- Quickstart: quickstart.md
-- Installation and Setup: setup.md
-- macOS with Apple Sillicon: setup/macos-apple-silicon.md
 - Enabling Developer Mode: enable-developer-mode.md
-- Using Ansight:
-  - Recording Test Sessions: using-ansight/recording-test-sessions.md
-  - Replaying Sessions: using-ansight/replaying-sessions.md
-  - Filtering Logs: using-ansight/filtering-logs.md
-- Logging Best Practices: logging-best-practices.md
-- General:
-  - Support: support.md
-  - Licensing: licensing.md
-  - FAQ: faq.md
+- Ansights Origins: ansights-origins.md
 - Releases: https://github.com/Ansight/ansight.releases/releases
-- Known Issues And Limitations: known-issues-limitations.md
-- Roadmap: https://github.com/Ansight/ansight.feedback/discussions/categories/roadmap
 - Legal:
-  - Third Party Software: legal/third-party-software.md
-  - Privacy Policy: legal/privacy-policy.md
+  - Data Collection And User Tracking: legal/data-collection-and-user-tracking.md
   - End User License: legal/end-user-license.md
-- About US: about-us.md
+  - Third Party Software: legal/third-party-software.md
